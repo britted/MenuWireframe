@@ -1,0 +1,374 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>West End Wok Wireframe</title>
+
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom -->
+    <link href="css/custom.css" rel="stylesheet">
+<!-- included from initial example -->
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+ 
+  
+    <!-- put here for the map because no custom.css file exists yet for this  -->
+    <style>
+      #map { height: 400px }
+    </style>
+
+
+  </head>
+  <body>
+  <div class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"></button>
+        <a class="navbar-header" href="WWW.html">West End Wok</a>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="WWW.html#hours">Hours</a></li>
+            <li><a href="#active">Menu</a></li>
+            <li><a href="WWW.html#contact">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+<br> &nbsp
+  <div class = "main">
+    <section class = "about">
+      <div class = "container-fluid">
+        <div class ="row">
+          <div class = "jumbotron">
+          <h1>West End Wok</h1>
+          <p>We're the Central West End's proud home of authentic Chinese food, to-go, delivery and dine-in! </p>
+  <!-- Call to place your order button --> 
+            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#call">
+            Call to place your order!
+          </button>
+  <!-- Order online button --> 
+          <button type = "button" class = "btn btn-default" data-toggle="modal" data-target="#order">
+            Place your order here
+          </button>
+  <!-- Subscribe button -->
+          <button type = "button" class = "btn btn-default" data-toggle="modal" data-target="#subscribe">
+            Subscribe for discounts!
+          </button>
+          <br> &nbsp 
+  <!-- Photo Carousel -->        
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+              </ol>
+ 
+  <!-- Wrapper for slides -->
+              <div class="carousel-inner">
+                <div class="item active">
+                  <img src = "l.jpg">
+                  <div class="carousel-caption">
+                      
+                  </div>
+                </div>
+
+                <div class="item">
+                  <img src="3.jpg">
+                  <div class="carousel-caption">
+                      
+                  </div>
+                </div>
+
+                <div class="item">
+                  <img src="4.jpg" >
+                  <div class="carousel-caption">
+                      
+                  </div>
+                </div>
+
+                <div class="item">
+                  <img src="2.jpg">
+                  <div class="carousel-caption">
+                      
+                  </div>
+                </div>
+
+              </div>
+ 
+  <!-- Controls -->
+              <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+              </a>
+              <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+ 
+
+<!-- Menu -->
+
+     <section class = "menus" id = "menu">
+       <div class = "container-fluid">
+          <div class ="row">
+            <div class ="menu">
+              <h1>Menus</h1>
+            </div>
+              <div class="panel-group" id="accordion">
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#accordion" href="#apps">
+                      Appetizers & Soups</a>
+                    </h3>
+                  </div>
+                  <div id="apps" class="panel-collapse collapse">
+                    <div class="panel-body">
+                      <b>egg rolls (2)</b> | $2.25 
+                      <br><b>crab rangoons (5)</b> | $3.95 
+                      <br><b>hot and sour soup</b> | $2.25 
+                      <br><b>egg drop soup</b> | $1.75 
+                      <br><b>seafood soup</b> | $2.75
+                      <br><b>chicken wings (6)</b> | $4.95 
+                      <br><b>pot stickers (6)</b> | $4.50 
+                      <br><b>combo platter</b> | $7.50
+                      <br>2 each crab rangoon, egg roll, chicken wing, crab stick 
+                    </div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#housespecials">House Specials</a>
+                    </h3>
+                  </div>
+                  <div id="housespecials" class="panel-collapse collapse">
+                    <div class="panel-body">
+                      <b>triple delight</b> | $9.25
+                      <br>beef, chicken & shrimp w/vegetables in brown sauce
+                      <br><b>Happy Family</b> | $10.50
+                      <br>shrimp,s callop, beef & crab stick w/veggies in special sauce
+                      <br><b>four ingredients</b> | $9.50
+                      <br>chicken, beef, shrimp, crab sticks & veggie in house sauce
+                      <br><b>sweet & sour delight</b> | $9.75
+                      <br>fried chicken & shrimp in sweet & sour sauce
+                      <br><b>green pepper beef</b> | $9.50
+                      <br>beef w/green peppers in house sauce
+                      <br><b>szechuan combo</b> | $9.75
+                      <br>chicken, shrimp, scallop & veggie in special sauce
+                      <br><b>shrimp w/lobster sauce</b> | $10.25
+                      <br>shrimp, egg & veggies w/special house sauce
+                      <br><b>salted pepper shrimp</b> | $11.50
+                      <br>shrimp in tangy special sauce
+                      <br><b>house beef</b> | $10.50
+                      <br>black peppered beef w/special sauce on bed of lettuce
+                      <br><b>walnut shrimp</b> | $11.50
+                      <br>shrimp, broccoli, & walnut in sweet & creamy sauce
+                      <br><b>jade scallop</b> | $11.75
+                      <br>scallops w/veggie in white sauce
+                    </div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#accordion" href="#noodlesandrice">
+                      Noodles and Rice</a>
+                    </h3>
+                  </div>
+                  <div id="noodlesandrice" class="panel-collapse collapse">
+                    <div class="panel-body">
+                      <b>chicken or veggie fried rice</b>
+                      $3.50 | $5.75 
+                      <br><b>beef or shrimp fried rice</b>
+                      $3.95 | $6.50 
+                      <br><b>house special fried rice</b>
+                      $4.75 | $7.25 
+                      <br><b>chicken or veggie lo mein</b>
+                      $4.25 | $6.25 
+                      <br><b>beef or shimp lo mein</b>
+                      $4.75 | $6.95 
+                      <br><b>house special lo mein</b>
+                      $5.25 | $7.75 
+                    </div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#accordion" href="#combos">
+                      Combination Plates</a>
+                    </h3>
+                  </div>
+                  <div id="combos" class="panel-collapse collapse">
+                    <div class="panel-body">
+                      <b>kung pao chicken</b> $5.25 | $6.75
+                      <br><b>cashew chicken</b> $5.25 | $6.75
+                      <br><b>buddhist delight</b> $5.25 | $6.75
+                      <br><b>hunan chicken</b> $5.25 | $6.75 
+                      <br><b>garlic chicken</b> $5.25 | $6.75 
+                      <br><b>stir fried vegetables</b> $5.25 | $6.75 
+                      <br><b>snow pea chicken</b> $5.25 | $6.75 
+                      <br><b>kung pao beef</b> $5.50 | $6.95 
+                      <br><b>mongolian beef</b> $5.50 | $6.95 
+                      <br><b>hunan beef</b> $5.50 | $6.95 
+                      <br><b>beef and broccoli</b> $5.50 | $6.95 
+                      <br><b>spicy chicken</b> $5.75 | $7.25 
+                      <br><b>empress chicken</b> $5.75 | $7.25 
+                      <br><b>sweet & sour chicken</b> $5.75 | $7.25 
+                      <br><b>sesame chicken</b> $5.75 | $7.25 
+                      <br><b>orange chicken</b> $5.75 | $7.25 
+                      <br><b>spicy beef</b> $5.95 | $7.50 
+                      <br><b>hot braised chicken</b> $5.95 | $7.50 
+                      <br><b>general tsao’s chicken</b> $6.25 | $7.75 
+                      <br><b>hot braised shrimp</b> $6.75 | $8.25 
+                      <br><b>general tsao’s shrimp</b> $6.95 | $8.50 
+                    </div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#accordion" href="#vegetarian">
+                      Vegetarian</a>
+                    </h3>
+                  </div>
+                  <div id="vegetarian" class="panel-collapse collapse">
+                    <div class="panel-body">
+                      <b>hunan tofu</b> | $8.25
+                      <br><b>vegetable moo shu</b> | $7.50
+                      <br><b>mapo tofu</b> | $7.75
+                      <br><b>eggplant delight</b> | $7.95
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+      </div>
+    </section>
+  </div>
+
+
+<!-- Calling Modal -->
+<div class="modal fade" id="call" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Our phone number: </h4>
+      </div>
+      <div class="modal-body">
+        (314) 361-2233 
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Order Modal -->
+<div class="modal fade" id="order" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Your order: </h4>
+      </div>
+           <div class="modal-body">
+<form>
+  <div class="form-group">
+    <label for="NameInput">Name</label>
+    <input type="name" class="form-control" id="exampleInputEmail1" placeholder="Enter your name">
+  </div>
+  <div class="form-group">
+    <label for="AddressInput">Address</label>
+    <input type="Address" class="form-control" id="exampleInputPassword1" placeholder="Address">
+  </div>
+ <div class="form-group">
+    <label for="AddressInput">Order Summary</label>
+    <input type="Address" class="form-control" id="exampleInputPassword1" placeholder="Your order">
+  </div>
+  <div class="checkbox">
+    <label>
+      <input type="checkbox"> Check me out
+    </label>
+  </div>
+  <button type="submit" class="btn btn-default">Submit</button>
+</form>
+      </div>
+    </div>
+  </div>
+</div>
+
+div>
+
+<!-- Subscribe Modal -->
+<div class="modal fade" id="subscribe" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Please fill in and submit the form below to subscribe to our mailing list for discounts and birthday specials!</h4>
+      </div>
+           <div class="modal-body">
+<form>
+  <div class="form-group">
+    <label for="NameInput">Name</label>
+    <input type="name" class="form-control" id="Name" placeholder="Enter your name">
+  </div>
+  <div class="form-group">
+    <label for="Email Address">Address</label>
+    <input type="Email Address" class="form-control" id="Name" placeholder="Email">
+  </div>
+ <div class="form-group">
+    <label for="AddressInput">Birthday</label>
+    <input type="Address" class="form-control" id="exampleInputPassword1" placeholder="ZIP">
+  </div>
+   <div class="form-group">
+    <label for="AddressInput">I ___ in the Central West End</label>
+  <div class="radio">
+  <label>
+    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+    Live
+  </label>
+</div>
+<div class="radio">
+  <label>
+    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+    Work
+  </label>
+</div>
+<div class="radio">
+  <label>
+    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+    Play
+  </label>
+</div>
+</div>
+  <button type="submit" class="btn btn-default">Submit</button>
+</form>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+  </body>
+</html>
