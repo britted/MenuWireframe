@@ -31,19 +31,21 @@
 <!-- Nav bar -->
   <div class="navbar navbar-default navbar-fixed-top">
     <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"></button>
-        <a class="navbar-header" href="WWW.html">West End Wok</a>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class = "icon-bar"></span> 
+          <span class = "icon-bar"></span> 
+          <span class = "icon-bar"></span> 
+          </button>
+        <a class="navbar-brand text muted" href="index.html">West End Wok</a>
         <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li><a href="#hours">Hours</a></li>
+          <ul class="nav navbar-nav navbar-right nav-tabs" role = "tablist">
+            <li><a href="#openhours">Hours</a></li>
             <li><a href="menu.html">Menu</a></li>
             <li><a href="#contact">Contact Us</a></li>
           </ul>
         </div>
       </div>
     </div>
-  </div>
 
 <br> &nbsp
 <!-- Main Section of Home page --> 
@@ -121,74 +123,65 @@
         </div>
       </div>
     </section>
-  
-<!-- Hours  --> 
-    <section class = "hours" id = "hours"> 
-       <div class = "container-fluid">
-        <div class ="row">
-          <div class ="hours">
-            <h2>Restaurant Hours</h2>
-            <ul class = "days" style="inline">
-              <li>
-                <h4>
-                  <span>Sunday</span> : Closed
-                </h4>
-              </li>
-              <li>
-                <h4>
-                  <span>Monday - Saturday</span> : 10am - 11pm
-                </h4>
-              </li>
-            </ul> 
-          </div> 
-        </div>
-      </div>
-    </section>  
+<!-- Large viewport-->
+    <div class = "wrapper">
+          <div class = "container-fluid">
+            <div class ="row">
+  <!-- Hours -->
+              <div class = "col-md-4 col-xs-12">
+                    <div class ="openhours" id = "openhours">
+                      <h2>Restaurant Hours</h2>
+                      <ul class = "days">
+                        <li>
+                          <h4>
+                            <span>Monday - Saturday</span> : 10am - 11pm
+                          </h4>
+                        </li>
+                        <li>
+                          <h4>
+                            <span>Sunday</span> : Closed
+                          </h4>
+                        </li>
+                      </ul> 
+                    </div> 
+              </div>
 
-<!-- Menu -->
-    <section class = "menus" id = "menu">
-       <div class = "container-fluid">
-          <div class ="row">
-            <div class ="menu">
-              <h2>Our Food</h2>
-              <p> We're a modern, contemporary take on the classic Chinese To-Go restaurant, with a clean, modern restaurant that's tastefully decorated. Value-oriented patrons appreciate our lunch and dinner combos that deliver a wide variety of food at a great price! Consistent, high-quality Chinese cuisine from a Saint Louis restaurant dedicated to quality food at a low cost, with quick turnaround and clean, Grade A facilities.</p>
-              <a class = "btn btn-default" href = "menu.html">See our menu!
-            </a>
+  <!-- Menu -->
+              <div class = "col-md-4 col-xs-12">
+                    <div class ="menu">
+                      <h2>Our Food</h2>
+                      <p> We're a modern, contemporary take on the classic Chinese To-Go restaurant, with a clean, modern restaurant that's tastefully decorated. Value-oriented patrons appreciate our lunch and dinner combos that deliver a wide variety of food at a great price! Consistent, high-quality Chinese cuisine from a Saint Louis restaurant dedicated to quality food at a low cost, with quick turnaround and clean, Grade A facilities.</p>
+                      <a class = "btn btn-default menu-btn" href = "menu.html">See our menu!
+                      </a>
+                    </div>
+              </div>
+
+  <!--  Contact -->
+              <div class = "col-md-4 col-xs-12">
+                    <div class = "contact" id = "contact">
+                      <h2>Contact</h2>
+                      <p>
+                      Address: 4577 Laclede Ave  Saint Louis Missouri  63108
+                      <br>Phone: (314) 361-2233</p>
+                      <div class = "container-fluid" id = "map"></div>
+                    </div>
+              </div>
             </div>
-          </div>
-      </div>
-    </section>
-
-<!--  Contact -->
-    <section class = "contact" id = "contact" >
-      <div class = "container-fluid">
-        <div class = "row">
-          <h2>Contact</h2>
-          <p>
-          Address: 4577 Laclede Ave  Saint Louis Missouri  63108
-          <br>Phone: (314) 361-2233</p>
-      </div>
-      <div class = "container-fluid" id = "map"></div>
-      </div>
-    </section>
-  </div>
-
-
-
-<!-- Calling Modal -->
-  <div class="modal fade" id="call" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h4 class="modal-title" id="myModalLabel">Our phone number: </h4>
-        </div>
-        <div class="modal-body">
-          (314) 361-2233 
-        </div>
-      </div>
+          </div> 
     </div>
-  </div>
+
+    <footer>
+      <p>
+        &nbsp &nbsp West End Wok &nbsp
+        <a href = "https://www.facebook.com/westendwok" target="_blank">
+          <span class = "glyphicon glyphicon-thumbs-up"></span>
+          Like us on facebook! 
+        </a>
+        <a href = "http://www.yelp.com/biz/west-end-wok-saint-louis" target="_blank"> • Check us out on Yelp!
+        </a>
+      </p>
+    </footer>
+   
 
 <!-- Menu Modal -->
   <div class="modal fade" id="menu" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -343,6 +336,10 @@
         title:"WWW"});
  
       var var_map = new google.maps.Map(document.getElementById("map"),
+          var_mapoptions);
+      var_marker.setMap(var_map); 
+
+      var var_map = new google.maps.Map(document.getElementById("map1"),
           var_mapoptions);
       var_marker.setMap(var_map); 
  

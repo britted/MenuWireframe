@@ -1,1 +1,127 @@
 /*custom styles*/
+/*add changes to the customize bootstrap before making the custom css
+want the custom css file to be as small as possible */ 
+
+/* if you want to change a certain section (h1) and then bootstrap is 
+styling it more specifically, it won't work. So, to style this header you 
+would copy and paste the section in the 'inspect element' area and paste it. 
+This will override bootstrap;s styling - only change the style of foucs
+(color, size, etc)*/ 
+
+/* what's on top in the file is more general, and as you go down it gets 
+more specific */
+
+html{
+	background-color: #770E17; 
+}
+body{
+	font-family: fantasy;
+}
+
+.navbar-default {
+	background-color: #ffffff;
+	border-color: #CCA300;
+	font-family: fantasy;
+
+}
+
+.navbar-default .navbar-brand {
+	color:#C91826;
+}
+.navbar-default .navbar-brand:hover {
+	color:#770E17;
+}
+/*.navbar-nav {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}*/
+
+.navbar-default .navbar-nav>li>a {
+	color: #C91826;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+	color: #770E17;
+}
+
+.main p, h4{
+	color: white;
+	font-family: fantasy;
+}
+
+.main h2{
+	color: #CCA300;
+}
+
+.container .jumbotron, .container-fluid .jumbotron {
+	border-radius: 6px;
+	font-family: fantasy;
+	text-align: center;
+	color: #770E17;
+	background-color: #C91826;
+}
+
+.jumbotron p{
+	color: #FFFFFF;
+}
+
+.btn-default {
+	color: #CCA300;
+	background-color: #7F262A;
+	border-color: #7F262A;
+}
+
+.btn-default.active, .btn-default.focus, .btn-default:active, .btn-default:focus, .btn-default:hover, .open>.dropdown-toggle.btn-default {
+color: #7F262A;
+background-color: #CCA300;
+border-color: #CCA300;
+}
+
+.carousel-indicators {
+	left: 50%;
+}
+
+.main{
+	background-color: #770E17;
+}
+
+.wrapper{
+	margin:50px 50px 50px 50px;
+	text-align: center;
+}
+
+.row{
+	text-align: center;
+}
+
+.wrapper .btn-default{
+	font-family: fantasy;
+	color: #FFFFFF;
+	background-color: #C91826;
+	border-color: #CCA300;
+}
+
+.wrapper .btn-default:hover {
+font-family: fantasy;
+color: #FFFFFF;
+background-color: #7F262A;
+border-color: #CCA300;
+}
+
+.days {
+	list-style-type: none;
+}
+.modal-title{
+	color:#770E17;
+}
+.panel-default{
+	border-color: #CCA300;
+}
+.panel-default>.panel-heading {
+color: #ffffff;
+background-color: #C91826;
+}
+
+.panel-group .panel{
+	color: #ffffff;
+	background-color: #770E17;
+}
